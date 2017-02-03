@@ -1,0 +1,57 @@
+--- 
+# 3 dashes above and below are needed 
+# so that jekyll can process the files 
+---
+<!DOCTYPE html>
+<html lang="en-gb">
+{% include head.html title=page.title %}
+
+<body>
+    {% include header.html %}
+    <div class="container">
+            <h1>Resize the screen and see how the flex boxes will resize automatically</h1>
+
+            <hr />
+            <div class="row">
+                <div class="block col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <p>Small example of flexbox</p>
+                </div>
+                <div class="block col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                        eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                </div>
+                <div class="block col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                        eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                </div>
+            </div>
+
+            <hr />
+            <h1>This example shows the vertical centering feature</h1>
+            <div class="row vertical-center">
+                <div class="col-lg-offset-2 col-md-offset-2 block col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                </div>
+                <div class="block col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                             eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                             eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% include footer.html %}
+</body>
+
+</html>
