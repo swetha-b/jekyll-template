@@ -6,11 +6,10 @@ HU2K17 UI Assignment
 
 clone the repository
 ```
-git clone git@github.com:hashedin/hashedin-website.git
-git branch jekyll-new
+git clone git@git.hashedin.com:hemny.singh/hu2k17-ui-track.git
 ```
 
-Run bundler to install the dependencies. This is similar to pip install
+Run bundler to install the dependencies.
 ```
 bundler install
 ```
@@ -78,6 +77,5 @@ AWS_SECRET_ACCESS_KEY = YOU-SECRET-ACCESS-KEY
 
 ### Step 1: Preparing the build
 1. First, ensure everything is committed and pushed. 
-1. Run the command `JEKYLL_ENV=production jekyll build`
-1. The files are generated under the `_site` directory
-1. To test the files, run `python -m SimpleHTTPServer` inside the `_site` directory, and test it thoroughly
+2. The files are generated under the `_site` directory
+3. To test the files, run `python -m SimpleHTTPServer` inside the `_site` directory, and test it thoroughly
