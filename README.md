@@ -4,21 +4,15 @@ HU2K17 UI Assignment
 
 ## Getting Started
 
-Setup JS lint
-```
-npm install jslint
-```
-Setup SASS lint
-```
-npm install sass-lint
-```
-
-
 clone the repository
 ```
 git clone git@git.hashedin.com:hemny.singh/hu2k17-ui-track.git
 ```
 
+Go to your project code directory
+```
+cd HU2K17_UI
+```
 Run bundler to install the dependencies.
 ```
 bundler install
@@ -29,17 +23,52 @@ Run the development server
 jekyll serve
 ```
 
+Setup JS lint
+```
+npm install jslint
+```
+Setup SASS lint
+```
+npm install sass-lint
+```
+
 Open [http://localhost:4000/](http://localhost:4000/) to browse the website
 
 ## Developing Pages
 You should familiarise yourself with jekyll and jekyll-assets, but here is a quick cheatsheet:
 
+### Template Structure
+```
+- _assets                         
+    - scripts                         
+    - styles
+    - libs
+- _sites
+- _posts
+- img
+- templates
+    - includes
+    - layouts
+```
+
+* _assets/scripts: Add your scripts files here
+* _assets/libs: third party libaries will be saved here.
+* _assests/styles: Write your page style here. We are following SASS to write page style.
+* _sites: This is where the generated site will be placed (by default) once Jekyll is done transforming it. Don't check-in this code in git.
+* _posts: Your dynamic content, so to speak. The naming convention of these files is important, and must follow the format: YEAR-MONTH-DAY-title.md. The permalinks can be customized for each post, but the date and markup language are determined solely by the file name. Read more [here](http://jekyllrb.com/docs/posts/)
+* templates/includes: These are the partials that can be mixed and matched by your layouts and posts to facilitate reuse. The liquid tag {% include file.ext %} can be used to include the partial in  templates/includes/file.ext.
+* templates/layouts: These are the templates that wrap posts. Layouts are chosen on a post-by-post basis in the YAML Front Matter, which is described in the next section. The liquid tag  {{ content }} is used to inject content into the web page.
+
 
 ### HTML 
-1. Include files go under `_includes`
+
+1. Include files go under `template/includes`
 1. To include a file, use `{% include head.html %}`
 1. To load css files, use `{% css main %}`. `.css` extension is not needed
 1. To load javascript files, use {% js vendor %}. `.js` extension is not needed
+2. Layout files go under  `template/layout`. You can add templates to wrap your posts here.
+3. Write your page root point as markdown. In the front matter (the three dashes at the top) - add title, description, headline and other such variables. Set the layout to respective template file.The layout page should use variables defined in markdown file - such as headline, subheadline etc.
+
 
 ### CSS
 1. CSS fragments/scss files go under `_assets/styles`
@@ -59,7 +88,6 @@ You should familiarise yourself with jekyll and jekyll-assets, but here is a qui
 ### Images
 1. Add images under `img` directory
 1. Use an absolute path, not a relative path. Use `/img/someimage.png`, not `img/someimage.png`. Note the leading slash.
-1. **NOTE: ** Never overwrite/update existing images. Images are cached for a year, so they will not be updated. If you want to update an image, create a new one and use it instead.
 
 ## Working with blogs
 See https://jekyllrb.com/docs/posts/ 
