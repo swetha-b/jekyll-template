@@ -3,13 +3,24 @@ h1 {
 }
 
 .block {
-  border: 1px #4D4D50 solid;
-  background-color: #DDD;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  border: 1px $border-color solid;
+  background-color: $grey-lighter-color;
+  box-shadow: 0 2px 5px $black-light-color;
   text-align: justify;
 }
 
-.vertical-center > [class*=" col-"] {
+.mom-header {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+
+  .header-text {
+    align-self: center;
+    font-size: 1.4em;
+    font-weight: 900;
+  }
+}
+
+.middle {
+  text-align: center;
 }

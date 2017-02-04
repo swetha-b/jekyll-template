@@ -1,15 +1,17 @@
----
-# 3 dashes above and below are needed
-# so that jekyll can process the files
+--- 
+# 3 dashes above and below are needed 
+# so that jekyll can process the files 
 ---
 <!DOCTYPE html>
 <html lang="en-gb">
 {% include head.html title=page.title %}
-    <body>
-        {% include header.html %}
-        <section>
-            Welocme Linkerss! 
-        </section>
-    </body>
-</html>
 
+<body>
+  {% include header.html %}
+  <div class="container">
+    <section class="middle">
+      Welocme Linkerss!
+    </section>
+  </div>
+</body>
+</html>

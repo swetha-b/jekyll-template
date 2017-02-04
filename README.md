@@ -4,6 +4,16 @@ HU2K17 UI Assignment
 
 ## Getting Started
 
+Setup JS lint
+```
+npm install jslint
+```
+Setup SASS lint
+```
+npm install sass-lint
+```
+
+
 clone the repository
 ```
 git clone git@git.hashedin.com:hemny.singh/hu2k17-ui-track.git
