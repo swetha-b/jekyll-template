@@ -3,4 +3,5 @@ _site
 .jekyll-metadata
 .Gemfile.lock
 .assest-cache
-
+node_modules
+.env

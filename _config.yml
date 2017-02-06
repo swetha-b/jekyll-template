@@ -20,27 +20,39 @@ description: > # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://some-url.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 layouts_dir:  ./templates/layouts
 includes_dir: ./templates/includes
 markdown: kramdown
-assets:
-    sources:
-        - _assets/styles
-        - _assets/libs
-        - _assets/images
-        - _assets/scripts
+
 gems:
   - jekyll-feed
   - jekyll-assets
   - jekyll-seo-tag
   - jekyll-minifier
   - jekyll-sitemap
+
+permalink: pretty
+
+assets:
+    sources:
+        - _assets/styles
+        - _assets/libs
+        - _assets/images
+        - _assets/scripts
+
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
   - venv
+  - s3_website.yml
   - .env
+  - node_modules
+  - package.json
+  - jslint.conf
+  - .htmlhintrc
+  - .editorconfig
+  - .sass-lint.yml

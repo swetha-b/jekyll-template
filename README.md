@@ -1,7 +1,7 @@
 HU2K17 UI Assignment
 ======================
 
-##Prerequisties
+## Prerequisties
 
 * Ruby version 2.0 or above
 * RubyGems
@@ -127,8 +127,8 @@ touch .env
 Then, edit `.env` and add your credentials
 
 ```
-AWS_ACCESS_KEY_ID = YOUR-ACCESS-KEY
-AWS_SECRET_ACCESS_KEY = YOU-SECRET-ACCESS-KEY
+s3_id = YOUR-ACCESS-KEY
+s3_secret = YOU-SECRET-ACCESS-KEY
 ```
 
 ## Don't share AWS keys.
