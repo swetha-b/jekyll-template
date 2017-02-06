@@ -77,11 +77,11 @@ basis in the YAML Front Matter, which is described in the next section. The liqu
 
 ### HTML 
 
-1. Include files go under `template/includes`
+1. Include files go under `templates/includes`
 1. To include a file, use `{% include head.html %}`
 1. To load css files, use `{% css main %}`. `.css` extension is not needed
 1. To load javascript files, use {% js vendor %}. `.js` extension is not needed
-2. Layout files go under  `template/layout`. You can add templates to wrap your posts here.
+2. Layout files go under  `templates/layout`. You can add templates to wrap your posts here.
 3. Write your page root point as markdown. In the front matter (the three dashes at the top) - add title, description, headline and other such variables. Set the layout to respective template file.The layout page should use variables defined in markdown file - such as headline, subheadline etc.
 
 
@@ -131,10 +131,32 @@ s3_id = YOUR-ACCESS-KEY
 s3_secret = YOU-SECRET-ACCESS-KEY
 ```
 
-## Don't share AWS keys.
+##Note
+ * Rename `s3_website-example.yml` to `s3_website.yml`. Update `s3_bucket` value.
+ * Update the other Configuration as per your requirements. You can refer to [this] (https://hashedin.com/2017/01/17/static-website-using-jekyll-and-jekyll-assets-and-s3/)
+  blog for detailed information.
+
+## Don't share AWS keys. Never submit .env and s3_website.yml file with PR. 
 
 ### Step 2: Preparing the build
 1. First, ensure everything is committed and pushed. 
-2. Run the command JEKYLL_ENV=production jekyll build
+2. Run the command `jekyll build`
 3. The files are generated under the `_site` directory
 4. To test the files, run `python -m SimpleHTTPServer` inside the `_site` directory, and test it thoroughly
+
+### Step 3: Deploy
+
+To Deploy it on S3
+```
+./deploy.sh
+```
+
+To simulate a dry run, use the --dry-run flag
+```
+./deploy.sh --dry-run
+```
+
+s3_website only uploads changes. To force it to push everything again, use the --force flag
+```
+./deploy.sh --force
+```

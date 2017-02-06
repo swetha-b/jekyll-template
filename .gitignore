@@ -2,6 +2,7 @@ _site
 .sass-cache
 .jekyll-metadata
 .Gemfile.lock
-.assest-cache
+.asset-cache
 node_modules
 .env
+s3_website.yml
