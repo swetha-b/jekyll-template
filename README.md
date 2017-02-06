@@ -105,7 +105,7 @@ basis in the YAML Front Matter, which is described in the next section. The liqu
 1. Use an absolute path, not a relative path. Use `/img/someimage.png`, not `img/someimage.png`. 
 Note the leading slash.
 
-####NOTE 
+#### NOTE 
 Never overwrite/update existing images. Images are cached for a year, so they will not be updated.
  If you want to update an image, create a new one and use it instead.
 
@@ -131,7 +131,7 @@ s3_id = YOUR-ACCESS-KEY
 s3_secret = YOU-SECRET-ACCESS-KEY
 ```
 
-##Note
+## Note
  * Rename `s3_website-example.yml` to `s3_website.yml`. Update `s3_bucket` value.
  * Update the other Configuration as per your requirements. You can refer to [this] (https://hashedin.com/2017/01/17/static-website-using-jekyll-and-jekyll-assets-and-s3/)
   blog for detailed information.
