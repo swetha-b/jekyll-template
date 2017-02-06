@@ -11,7 +11,7 @@ git clone git@git.hashedin.com:hemny.singh/hu2k17-ui-track.git
 
 Go to your project code directory
 ```
-cd HU2K17_UI
+cd hu2k17_ui
 ```
 Run bundler to install the dependencies.
 ```
