@@ -1,0 +1,19 @@
+{
+  "name": "hu2k17_ui",
+  "version": "1.0.0",
+  "description": "HU2K17 UI Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.hashedin.com:hashedin/hu2k17-ui-track.git"
+  },
+  "author": "Hashedin",
+  "license": "ISC",
+  "dependencies": {
+    "jslint": "^0.10.3",
+    "sass-lint": "^1.10.2"
+  }
+}
