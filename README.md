@@ -21,6 +21,12 @@ Go to your project code directory
 ```
 cd hu2k17_ui
 ```
+
+Install bundler if not installed
+```
+gem install bundler
+```
+
 Run bundler to install the dependencies.
 ```
 bundler install
@@ -112,7 +118,6 @@ Never overwrite/update existing images. Images are cached for a year, so they wi
 ## Working with blogs
 See https://jekyllrb.com/docs/posts/ 
 
-
 ## Deploying
 
 ### Step 1: Configure AWS Credetials
@@ -138,6 +143,7 @@ s3_secret = YOU-SECRET-ACCESS-KEY
 
 ## Don't share AWS keys. Never submit .env and s3_website.yml file with PR. 
 
+
 ### Step 2: Preparing the build
 1. First, ensure everything is committed and pushed. 
 2. Run the command `jekyll build`
@@ -160,3 +166,32 @@ s3_website only uploads changes. To force it to push everything again, use the -
 ```
 ./deploy.sh --force
 ```
+
+## Important Link
+
+* Git Repo: [http://git.hashedin.com/hashedin/hu2k17-ui-track](http://git.hashedin.com/hashedin/hu2k17-ui-track)
+* Links to mockups: [zpl.io/1gTJAN](Zeplin)
+* To check page performance: You need to add this extension in your chrome. [https://chrome.google.com/webstore/detail/google-pagespeed-insights/edbkhhpodjkbgenodomhfoldapghpddk?hl=en-GB](PageSpeed)
+* To check SEO: 
+** Add this extension in your chrome to check the SEO Scrore: [https://chrome.google.com/webstore/detail/seo-website-analysis/hlngmmdolgbdnnimbmblfhhndibdipaf?utm_source=chrome-app-launcher-info-dialog](WooRank)
+** Add this extension in your chrome to check the html page hierarchy. [https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo?utm_source=chrome-app-launcher-info-dialog](HTML5 Outline)
+
+
+## Tutorials:
+
+* Flex box layout: [https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* Fun tutorial to learn flex box layout: [http://flexboxfroggy.com/](http://flexboxfroggy.com/)
+* Bootstrap 4: [http://v4-alpha.getbootstrap.com/getting-started/introduction/](http://v4-alpha.getbootstrap.com/getting-started/introduction/)
+* SASS: 
+** [https://scotch.io/tutorials/getting-started-with-sass](https://scotch.io/tutorials/getting-started-with-sass)
+** [https://hashedin.com/2016/07/28/sass-happy-styling/](https://hashedin.com/2016/07/28/sass-happy-styling/)
+** [https://hashedin.com/2016/07/28/sass-happy-styling-part-2/](https://hashedin.com/2016/07/28/sass-happy-styling-part-2/)
+* CSS Concepts:
+** Box Model: [https://css-tricks.com/the-css-box-model/](https://css-tricks.com/the-css-box-model/)
+** CSS Selectors: [http://tutorials.jenkov.com/css/selectors.html](http://tutorials.jenkov.com/css/selectors.html)
+** CSS Positioning: [https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/](https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/)
+* SEO guidelines doc: 
+** [https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo](https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo)
+** [https://github.com/jekyll/jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
+** [https://www.quicksprout.com/the-advanced-guide-to-seo/](https://www.quicksprout.com/the-advanced-guide-to-seo/)
+
