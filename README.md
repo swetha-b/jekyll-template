@@ -170,11 +170,11 @@ s3_website only uploads changes. To force it to push everything again, use the -
 ## Important Link
 
 * Git Repo: [http://git.hashedin.com/hashedin/hu2k17-ui-track](http://git.hashedin.com/hashedin/hu2k17-ui-track)
-* Links to mockups: [zpl.io/1gTJAN](Zeplin)
+* Links to mockups: [Zeplin](zpl.io/1gTJAN)
 * To check page performance: You need to add this extension in your chrome. [https://chrome.google.com/webstore/detail/google-pagespeed-insights/edbkhhpodjkbgenodomhfoldapghpddk?hl=en-GB](PageSpeed)
 * To check SEO: 
-  * Add this extension in your chrome to check the SEO Scrore: [https://chrome.google.com/webstore/detail/seo-website-analysis/hlngmmdolgbdnnimbmblfhhndibdipaf?utm_source=chrome-app-launcher-info-dialog](WooRank)
-  * Add this extension in your chrome to check the html page hierarchy. [https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo?utm_source=chrome-app-launcher-info-dialog](HTML5 Outline)
+  * Add this extension in your chrome to check the SEO Scrore: [WooRank](https://chrome.google.com/webstore/detail/seo-website-analysis/hlngmmdolgbdnnimbmblfhhndibdipaf?utm_source=chrome-app-launcher-info-dialog)
+  * Add this extension in your chrome to check the html page hierarchy. [HTML5 Outline](https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo?utm_source=chrome-app-launcher-info-dialog)
 
 
 ## Tutorials:
