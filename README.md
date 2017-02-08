@@ -21,6 +21,12 @@ Go to your project code directory
 ```
 cd hu2k17_ui
 ```
+
+Install bundler if not installed
+```
+gem install bundler
+```
+
 Run bundler to install the dependencies.
 ```
 bundler install
@@ -108,13 +114,12 @@ basis in the YAML Front Matter, which is described in the next section. The liqu
 1. Use an absolute path, not a relative path. Use `/img/someimage.png`, not `img/someimage.png`. 
 Note the leading slash.
 
-####NOTE 
+#### NOTE 
 Never overwrite/update existing images. Images are cached for a year, so they will not be updated.
  If you want to update an image, create a new one and use it instead.
 
 ## Working with blogs
 See https://jekyllrb.com/docs/posts/ 
-
 
 ## Deploying
 
@@ -137,9 +142,10 @@ s3_secret = YOU-SECRET-ACCESS-KEY
 ##Note
  * Update `s3_bucket` value in `s3_website.yml`.
  * You can refer to [this](https://hashedin.com/2017/01/17/static-website-using-jekyll-and-jekyll-assets-and-s3/)
-  blog for detailed information.
+
 
 ## Don't share AWS keys. Never submit .env and s3_website.yml file with PR. 
+
 
 ### Step 2: Preparing the build
 1. First, ensure everything is committed and pushed. 
@@ -163,3 +169,13 @@ s3_website only uploads changes. To force it to push everything again, use the -
 ```
 ./deploy.sh --force
 ```
+
+## Important Link
+
+* Git Repo: [http://git.hashedin.com/hashedin/hu2k17-ui-track](http://git.hashedin.com/hashedin/hu2k17-ui-track)
+* Links to mockups: [Zeplin](http://zpl.io/1gTJAN)
+* To check page performance: You need to add this extension in your chrome. [https://chrome.google.com/webstore/detail/google-pagespeed-insights/edbkhhpodjkbgenodomhfoldapghpddk?hl=en-GB](PageSpeed)
+* To check SEO: 
+  * Add this extension in your chrome to check the SEO Scrore: [WooRank](https://chrome.google.com/webstore/detail/seo-website-analysis/hlngmmdolgbdnnimbmblfhhndibdipaf?utm_source=chrome-app-launcher-info-dialog)
+  * Add this extension in your chrome to check the html page hierarchy. [HTML5 Outline](https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo?utm_source=chrome-app-launcher-info-dialog)
+
