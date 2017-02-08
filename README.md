@@ -131,8 +131,8 @@ touch .env
 Then, edit `.env` and add your credentials
 
 ```
-s3_id = YOUR-ACCESS-KEY
-s3_secret = YOU-SECRET-ACCESS-KEY
+AWS_ACCESS_KEY_ID = YOUR-ACCESS-KEY
+AWS_SECRET_ACCESS_KEY = YOU-SECRET-ACCESS-KEY
 ```
 
 ##Note
@@ -168,7 +168,6 @@ s3_website only uploads changes. To force it to push everything again, use the -
 
 ## Important Link
 
-* Git Repo: [http://git.hashedin.com/hashedin/hu2k17-ui-track](http://git.hashedin.com/hashedin/hu2k17-ui-track)
 * Links to mockups: [Zeplin](http://zpl.io/1gTJAN)
 * To check page performance: You need to add this extension in your chrome. [https://chrome.google.com/webstore/detail/google-pagespeed-insights/edbkhhpodjkbgenodomhfoldapghpddk?hl=en-GB](PageSpeed)
 * To check SEO: 
