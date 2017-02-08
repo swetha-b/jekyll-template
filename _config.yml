@@ -23,8 +23,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://some-url.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-layouts_dir:  ./templates/layouts
-includes_dir: ./templates/includes
 markdown: kramdown
 
 gems:
@@ -40,8 +38,10 @@ assets:
     sources:
         - _assets/styles
         - _assets/libs
-        - _assets/images
         - _assets/scripts
+
+include: 
+  - _pages
 
 exclude:
   - Gemfile

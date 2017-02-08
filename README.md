@@ -47,18 +47,20 @@ You should familiarise yourself with jekyll and jekyll-assets, but here is a qui
     - scripts                         
     - styles
     - libs
+- _includes
+- _layouts
+- _pages
 - _sites
 - _posts
 - img
 - fonts
-- templates
-    - includes
-    - layouts
+
+    
 ```
 
 * _assets/scripts: Add your scripts files here
 * _assets/libs: third party libaries will be saved here.
-* _assests/styles: Write your page style here. We are following SASS to write page style.
+* _assests/styles: Write your page style here. We are following SASS to write style. Divide style on component level like layout, header etc.
 * _sites: This is where the generated site will be placed (by default) once Jekyll is done 
 transforming it. Don't check-in this code in git.
 * img: Add images here.
@@ -67,12 +69,13 @@ transforming it. Don't check-in this code in git.
  and must follow the format: `YEAR-MONTH-DAY-title.md`. The permalinks can be customized for each
   post, but the date and markup language are determined solely by the file name. 
   Read more [here](http://jekyllrb.com/docs/posts/)
-* templates/includes: These are the partials that can be mixed and matched by your layouts and posts 
+* _includes: These are the partials that can be mixed and matched by your layouts and posts 
 to facilitate reuse. The liquid tag `{% include file.ext %}` can be used to include the partial in 
- `templates/includes/file.ext`.
-* templates/layouts: These are the templates that wrap posts. Layouts are chosen on a post-by-post 
+ `_includes/file.ext`.
+* _layouts: These are the templates that wrap posts. Layouts are chosen on a post-by-post 
 basis in the YAML Front Matter, which is described in the next section. The liquid tag  `{{ content }}`
  is used to inject content into the web page.
+ * _pages: Write your page's main template as Markdown here. See example `index.md` and `about.md`. You can pass dynamic content from here and refer to template through layout.
 
 
 ### HTML 
@@ -132,8 +135,8 @@ s3_secret = YOU-SECRET-ACCESS-KEY
 ```
 
 ##Note
- * Rename `s3_website-example.yml` to `s3_website.yml`. Update `s3_bucket` value.
- * Update the other Configuration as per your requirements. You can refer to [this] (https://hashedin.com/2017/01/17/static-website-using-jekyll-and-jekyll-assets-and-s3/)
+ * Update `s3_bucket` value in `s3_website.yml`.
+ * You can refer to [this](https://hashedin.com/2017/01/17/static-website-using-jekyll-and-jekyll-assets-and-s3/)
   blog for detailed information.
 
 ## Don't share AWS keys. Never submit .env and s3_website.yml file with PR. 
