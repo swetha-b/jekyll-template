@@ -1,0 +1,28 @@
+#s3_id: YOUR_AWS_S3_ACCESS_KEY_ID
+#s3_secret: YOUR_AWS_S3_SECRET_ACCESS_KEY
+#Update your bucket name here.
+s3_bucket: <bucket_name>
+
+index_document: index.html
+error_document: error.html
+
+max_age:
+    "favicon.ico": 31536000
+    "assets/*": 600
+    "*.json": 600
+    "*.xml": 600
+    "*.html": 300
+
+gzip:
+  - .html
+  - .css
+  - .md
+gzip_zopfli: true
+
+s3_endpoint: us-east-1
+
+cloudfront_wildcard_invalidation: true
+
+redirects:
+  index.html: /
+  about.html: /about
