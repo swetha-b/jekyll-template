@@ -37,10 +37,6 @@ Run the development server
 jekyll serve
 ```
 
-Setup lint
-```
-npm install
-```
 
 Open [http://localhost:4000/](http://localhost:4000/) to browse the website
 
