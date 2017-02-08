@@ -71,8 +71,7 @@ transforming it. Don't check-in this code in git.
  and must follow the format: `YEAR-MONTH-DAY-title.md`. The permalinks can be customized for each
   post, but the date and markup language are determined solely by the file name. 
   Read more [here](http://jekyllrb.com/docs/posts/)
-* _includes: These are the partials that can be mixed and matched by your layouts and posts 
-to facilitate reuse. The liquid tag `{% include file.ext %}` can be used to include the partial in 
+* _includes: These are the partials that can be mixed and matched by your layouts and posts to facilitate reuse. The liquid tag `{% include file.ext %}` can be used to include the partial in 
  `_includes/file.ext`.
 * _layouts: These are the templates that wrap posts. Layouts are chosen on a post-by-post 
 basis in the YAML Front Matter, which is described in the next section. The liquid tag  `{{ content }}`
