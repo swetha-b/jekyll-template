@@ -71,12 +71,12 @@ basis in the YAML Front Matter, which is described in the next section. The liqu
 
 ### HTML 
 
-1. Include files go under `templates/includes`
+1. Include files go under `_includes`
 1. To include a file, use `{% include head.html %}`
 1. To load css files, use `{% css main %}`. `.css` extension is not needed
 1. To load javascript files, use {% js vendor %}. `.js` extension is not needed
-2. Layout files go under  `templates/layout`. You can add templates to wrap your posts here.
-3. Write your page root point as markdown. In the front matter (the three dashes at the top) - add title, description, headline and other such variables. Set the layout to respective template file.The layout page should use variables defined in markdown file - such as headline, subheadline etc.
+2. Layout files go under  `_layout`. You can add templates to wrap your posts here.
+3. Write your page root point as markdown. These markdown should go under `_pages`. In the front matter (the three dashes at the top) - add title, description, headline and other such variables. Set the layout to respective template file.The layout page should use variables defined in markdown file - such as headline, subheadline etc.
 
 
 ### CSS
