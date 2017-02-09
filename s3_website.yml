@@ -1,6 +1,8 @@
-#s3_id: YOUR_AWS_S3_ACCESS_KEY_ID
-#s3_secret: YOUR_AWS_S3_SECRET_ACCESS_KEY
-#Update your bucket name here.
+# Don't add your AWS credentials here! 
+# See readme.md for instructions on how to store your credentials
+
+# Update your S3 bucket name here
+# The bucket name must not have https or slashes
 s3_bucket: <bucket_name>
 
 index_document: index.html
@@ -16,7 +18,9 @@ max_age:
 gzip:
   - .html
   - .css
-  - .md
+  - .js
+  - .json
+
 gzip_zopfli: true
 
 s3_endpoint: us-east-1
@@ -24,5 +28,4 @@ s3_endpoint: us-east-1
 cloudfront_wildcard_invalidation: true
 
 redirects:
-  index.html: /
   about.html: /about
