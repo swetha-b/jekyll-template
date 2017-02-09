@@ -154,12 +154,3 @@ s3_website only uploads changes. To force it to push everything again, use the -
 ```
 ./deploy.sh --force
 ```
-
-## Important Link
-
-* Links to mockups: [Zeplin](http://zpl.io/1gTJAN)
-* To check page performance: You need to add this extension in your chrome. [PageSpeed](https://chrome.google.com/webstore/detail/google-pagespeed-insights/edbkhhpodjkbgenodomhfoldapghpddk?hl=en-GB)
-* To check SEO: 
-  * Add this extension in your chrome to check the SEO Scrore: [WooRank](https://chrome.google.com/webstore/detail/seo-website-analysis/hlngmmdolgbdnnimbmblfhhndibdipaf?utm_source=chrome-app-launcher-info-dialog)
-  * Add this extension in your chrome to check the html page hierarchy. [HTML5 Outline](https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo?utm_source=chrome-app-launcher-info-dialog)
-
