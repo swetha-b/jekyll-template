@@ -11,3 +11,9 @@
   font-family: 'Open Sans', sans-serif;
   word-spacing: -1px;
 }
+.flex-footer {
+  display: flex;
+  background-color: $black;
+  height: 60px;
+  width: 100%;
+}
