@@ -1,5 +1,5 @@
-HU2K17 UI Assignment
-======================
+A template for Jekyll based static websites with plugins for SEO and Performance.
+
 
 ## Prerequisties
 
@@ -11,16 +11,6 @@ HU2K17 UI Assignment
 Read more [here] (https://jekyllrb.com/docs/installation/#requirements/)
 
 ## Getting Started
-
-clone the repository
-```
-git clone git@git.hashedin.com:hashedin/hu2k17-ui-track.git
-```
-
-Go to your project code directory
-```
-cd hu2k17_ui
-```
 
 Install bundler if not installed
 ```
