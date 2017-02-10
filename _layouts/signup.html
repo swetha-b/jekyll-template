@@ -1,0 +1,12 @@
+--- 
+# so that jekyll can process the files 
+---
+<!DOCTYPE html>
+<html lang="en-gb">
+{% include head.html title=page.title %}
+<body>
+  {% include signups1.html mom=page.mom name=page.name1 email=page.email pwd=page.pwd haveaccount=page.haveaccount %}
+  {% include footer.html %}
+
+</body>
+</html>

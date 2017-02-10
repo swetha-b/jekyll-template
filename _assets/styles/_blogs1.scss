@@ -1,0 +1,19 @@
+.blog-inner-flex-container4 {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	width: 100%;
+	background-image: url("/img/Assets/banner.jpg");
+
+}
+.blog-flex-item-title1{
+	color: $white;
+	width: 679px;
+  	height: 55px;
+  	font-family: Roboto;
+  	font-size: 56.2px;
+}
+.login-flex-container{
+	display: flex;
+	flex-flow: column;
+}

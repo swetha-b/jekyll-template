@@ -1,19 +1,49 @@
 <div class = "flex-container2">
-  <div class = "flex-item-title1">  </div>
+  <div class="inner-flex-container4">
+    <div> <img class = "flex-item-logo1" src="/img/Assets/logo_02.png" > </div>
+    <div class = "flex-item-title1"> {{include.mom}} </div>
+    <div class="flex-item-subtitle3"> {{include.subtitle3}} </div>
+  </div>
   <div class = "inner-flex-container1">
-  	<div class = "flex-item-text1"> is </div>
-  	<div class = "flex-item-image1"> </div>
+  	  <div class = "inner-item-flex1">
+        <div class = "flex-item-text1"> {{include.collab_notes}} </div>
+        <div class = "flex-item-subtext1"> {{include.subtext1}} </div>
+        <input type="button" class="getstarted" value="GET STARTED"/>
+      </div>
+      <div class="flex-item-image1"> <img class="m2" src="/img/Assets/mock_two.png" alt="No image" ></div>
   </div>
   <div class = "inner-flex-container2">
-  	<div class = "flex-item-text2"> is </div>
-  	<div class = "flex-item-image2"> </div>
+  	<div class = "flex-item-image2"> <img class="m3" src="/img/Assets/mock_three.png" alt="No image" > </div>
+  	<div class = "inner-item-flex1">
+        <div class = "flex-item-text1"> {{include.text2}} </div>
+        <div class = "flex-item-subtext1"> {{include.subtext2}} </div>
+        <input type="button" class="getstarted" value="GET STARTED"/>
+    </div>
   </div>
   <div class = "inner-flex-container3">
-  	<div class = "flex-item-template"> is </div>
-  	<div class = "flex-item-widget"> </div>
-  	<div class = "flex-item-action"> </div>
+  	<div class = "flex-item-template"> 
+      <div class="temp-row">
+          <div class = "template-logo"> <img class="flex-item-logo" src="/img/Assets/template.png" alt="N/A"> </div>
+          <div class = "template-title"> {{include.Template}}</div>
+      </div>
+      <div class = "template-text"> {{include.temp_text}}</div>
+    </div>
+  	<div class = "flex-item-template"> 
+        <div class="temp-row">
+          <div class = "template-logo"> <img class="flex-item-logo" src="/img/Assets/template.png" alt="N/A"> </div>
+          <div class = "template-title"> {{include.Widget}}</div>
+        </div>
+      <div class = "template-text"> {{include.temp_text}}</div>
+    </div>
+  	<div class = "flex-item-template">
+      <div class="temp-row">
+          <div class = "template-logo"> <img class="flex-item-logo" src="/img/Assets/template.png" alt="N/A"> </div>
+          <div class = "template-title"> {{include.Action}} </div>
+      </div>
+      <div class = "template-text"> {{include.temp_text}}</div>
+    </div>
   </div>
-  <div class = "flex-item-text3"> is </div>
+  <div class = "flex-item-text3"> </div>
  
 
 </div>

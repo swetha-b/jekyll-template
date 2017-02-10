@@ -3,10 +3,15 @@
   <span class="header-text">UI TRACK</span>
 </header-->
 <header class= "flex-header">
-  <div class = "flex-item-mom"> </div>
-  <div class = "flex-item-menu"> </div>
-  <div class = "flex-item-menu"> </div>
-  <div class = "flex-item-menu"> </div>
-  <div class = "flex-item-menu"> </div>
+  <div class = "inner-flex-logo-mom">
+    <div> <img class="flex-item-logo" src="/img/Assets/logo_02.png">  </div>	
+ 	  <div class = "flex-item-mom"> {{include.mom}} </div>
+  </div>
+  <div class = "inner-flex-menus">
+    <div class = "flex-item-menu"> {{include.pricing}}</div>
+    <div class = "flex-item-menu"> <a href="/blog/"> {{include.blog}} </a> </div>
+    <div class = "flex-item-menu"> <a href="/login/">{{include.login}}</a> </div>
+    <div class = "flex-item-menu"> <a href="/signup/">{{include.signup}} </a></div>
+  </div>
 
 </header>
