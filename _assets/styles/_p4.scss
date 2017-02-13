@@ -18,7 +18,7 @@
   
 }
 
-.flex-row {
+.flex-row1 {
   display: flex;
   flex-flow: row;
   align-items: center;
@@ -91,4 +91,69 @@
 
 .flex-item-getstarted1 {
   margin-top: 20%; 
+}
+
+@media screen and (max-width: 657px) {
+.flex-row1 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 70%;
+ 
+  }
+  .text-green {
+  color:  #62f346;
+
+}
+
+.dollar {
+  font-size: 20px;
+  margin-top: 25%;
+
+}
+
+.eight {
+  font-size: 80px;
+  margin-top: 85%;
+
+}
+
+.text-blue {
+  color: #40a3ff;
+}
+
+.ceo-name1 {
+  font-size: 20px;
+
+}
+.ceo-name2 {
+  font-size: 20px;
+  margin-top: 30%
+  
+}
+
+.flex-item-getstarted {
+  margin-top: 5%;
+
+}
+
+.flex-item-getstarted1 {
+ 
+}
+
+.ceo-name1 {
+  font-size: 15px;
+
+}
+.building1 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10%;
+  
+}
+ 
 }

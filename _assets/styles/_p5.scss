@@ -3,26 +3,25 @@
 	flex-flow: column;
 	align-items: center;
 	width: 100%;
-	background-color: $p3_col;
-  	
+	background: transparent;
+  margin-top: 5%;
 }
 
 
 ::-webkit-input-placeholder { 
-  color: $white;
-  //background-color: $p3_col;
-  //background-size: cover;
-  border-bottom: 1px solid $black;
+  color: black;
 }
 
-::-ms-input-placeholder { /* IE 10+ */
-  color: $white;
+:-ms-input-placeholder { /* IE 10+ */
+  color: $black;
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
-  color: $white;
+  color: $black;
 }
 
-::-moz-placeholder { /* Firefox 4 - 18 */
-  color: $white;
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: $black;
 }
+
+
