@@ -60,12 +60,8 @@
 }
 
 .flex-item-subtitle2 {
-  width: 466px;
-  height: 23px;
   font-family: Roboto;
   font-size: 22.5px;
-  font-weight: 300;
-  line-height: 1.33;
   text-align: center;
   color: $white;
   margin-top: 10px;
@@ -74,7 +70,28 @@
 .flex-item-image {
   display: flex;
   text-align: center;
-  margin:30px;
+  margin-top:10%;
   margin-bottom: 0px;
  
+}
+
+@media screen and (max-width: 657px){
+.flex-container1 {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: none;
+  width: 100%;
+  }
+
+  .flex-item-title {
+  width: 90%;
+  font-family: Roboto;
+  font-size: 30px;
+  color: $white;
+  margin:30px;
+}
+
 }

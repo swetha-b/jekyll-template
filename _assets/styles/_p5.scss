@@ -1,11 +1,28 @@
-.flex-container-5{
-  display: flex;
-  display: -webkit-flex;
-  justify-content: center;
-  width: 100%;
-  height: 1079px;
-  object-fit: contain;
-  align-items: center;
-  border: 1px solid #555;
-	
+.ip {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	width: 100%;
+	background-color: $p3_col;
+  	
+}
+
+
+::-webkit-input-placeholder { 
+  color: $white;
+  //background-color: $p3_col;
+  //background-size: cover;
+  border-bottom: 1px solid $black;
+}
+
+::-ms-input-placeholder { /* IE 10+ */
+  color: $white;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: $white;
+}
+
+::-moz-placeholder { /* Firefox 4 - 18 */
+  color: $white;
 }

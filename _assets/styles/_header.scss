@@ -1,8 +1,9 @@
 .flex-header {
   display: flex;
-  background-color: $black;
   height: 60px;
   width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   background-image: url("/img/Assets/banner.jpg");
 
 }
@@ -19,14 +20,8 @@
 }
 
 .inner-flex-menus{
-  display: flex;
   width: 80%;
   height: auto;
-  flex-flow: row;
-  margin-left:20px;
-  justify-content: flex-end;
-
-
 }
 
 .flex-item-mom {
@@ -46,5 +41,92 @@
   font-size: 21px;
   padding: 15px;
   color: $white;
+  
+}
+.hamburger{
+  display:none;
+}
+
+.switch-to-screen{
+  display:flex;
+  flex-flow: row;
+  margin-left:20px;
+  justify-content: flex-end;  
+}
+
+.switch-to-mob {
+  display: none;
+}
+
+#menu:link, #menu:visited, #menu:active {
+  color: $white;
+}
+#menu:hover {
+  text-decoration: underline;
+}
+
+#menu_signup:link, #menu_signup:visited, #menu_signup:active,#menu_signup:hover {
+  border: 1.1px solid $white;
+  border-radius: 19.9px;
+  color: $white;
+  padding: 3px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 657px){
+  .flex-header {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-image: url(/img/Assets/banner.jpg);
+  }
+
+  .flex-item-logo-mom{
+    display: flex;
+    align-items: flex-start;
+    width: 20%;
+    height: 50px;
+    flex-flow: row;
+  }
+
+  .flex-item-logo {
+    width:40px;
+    height: 40px;
+    margin-top: 5%;
+  }
+
+  .flex-item-mom {  
+    font-family: Roboto;
+    font-size: 25px;
+    padding-left: 6px;
+    padding-top: 10%;
+    height: 40px;
+    color: #fff;
+  }
+  .flex-item-menu {
+  width: 100%;
+  font-family: Roboto;
+  font-size: 15px;
+  color: $white;
+  
+}
+.switch-to-screen{
+  display: none;
+} 
+.hamburger {
+  display: flex;
+  align-items: flex-end;
+  flex-flow:column;
+  font-size: 30px;
+  color: $white;
+  padding:10px;
+}
+
+.hamburger:focus + .switch-to-mob {
+  display: flex;
+  flex-flow: column;
+  backgrond-color: $ham_bck;
+  width: 80%;
+}
   
 }
