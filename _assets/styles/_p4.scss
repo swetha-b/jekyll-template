@@ -35,11 +35,60 @@
 }
 
 .mob-img-1 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
   width: 313.1px;
   height: 523.9px;
   border-radius: 9px;
   background-color: #3e4a5c;
-  background-color: grey;
   margin: 20px;
+  background-image: url('/img/Assets/Pricing/user.svg');
+  background-size: 100% 100%;
 }
 
+.dollar-eight {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.building1 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 35%;
+}
+
+.text-green {
+  color:  #62f346;
+  margin-top: 1%;
+}
+
+.dollar {
+  font-size: 20px;
+  margin-top: 80%;
+}
+
+.eight {
+  font-size: 80px;
+  margin-top: 80%;
+}
+
+.text-blue {
+  color: #40a3ff;
+}
+
+.ceo-name1 {
+  font-size: 20px;
+}
+
+.flex-item-getstarted {
+  margin-top: 45%; 
+}
+
+.flex-item-getstarted1 {
+  margin-top: 20%; 
+}

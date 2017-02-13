@@ -74,6 +74,8 @@
 }
 .flex-item-text1{
   display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 	width: 50%;
 	color: $black;
   font-family: Roboto;
@@ -146,7 +148,7 @@
   line-height: 1.67;
 }
 .flex-container4 {
-  mrgin-top: 60px;
+  margin-top: 60px;
   width: 100%;
   height: 270px;
   background-image: url("/img/Assets/insights_bg.jpg");
@@ -162,7 +164,7 @@
   display: flex;
   flex-flow: column;
   width: 30%;
-  padding: 7%;
+  margin: 12%; 
 
 }
 .top-text {
@@ -176,4 +178,86 @@
   font-size: 20px;
   font-weight: 200;
   color: $white;
+}
+#web_props1 {
+  display: flex;
+  flex-flow: row;
+  width: 50%;
+
+}
+@media screen and (max-width: 657px){
+  .flex-container2{
+    height: 50%; 
+  }
+
+  .flex-item-subtitle3 {
+    width: 60%;
+    font-family: Roboto;
+  }  
+
+  .inner-flex-container1 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inner-flex-container1 > div.flex-item-image1 {
+    order:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+  .inner-flex-container1 > div.inner-item-flex1 {
+    order:2;
+    margin-top: 10%;
+  }
+  .inner-item-text1 {
+    font-size: 30px;
+    margin-top: 5%;
+  }
+  .inner-item-subtext1{
+    font-size: 20px;
+    margin-top: 5%;
+  }
+  .getstarted {
+    margin-top: 5%;
+  }
+
+  .inner-flex-container3 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .template-title {
+    margin-left: 25%;
+    margin-top: 10%;
+  }
+  .flex-container4 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 25%;
+  }
+  .inner-flex-rows{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inner-flex-stats-cols {
+    margin: 35%;
+  }
+  .top-text {
+     font-size: 35px;
+  }
+  .bottom-text {
+    font-size: 30px;
+  }
 }
