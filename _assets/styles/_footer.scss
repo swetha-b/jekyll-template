@@ -14,16 +14,17 @@
 .flex-footer {
   display: flex;
   background-color: $black;
+  align-items: center;
+  justify-content: center;
   height: 60px;
   width: 100%;
   align-items: center;
   flex-flow: row;
 
 }
-#foot {
-
+.foot {
   font-family: ProximaNova;
   font-size: 18px;
   color: $footcol;
-  text-align: center;
+  
 }
